@@ -1,0 +1,93 @@
+// $about-heading-font:23px;
+// $about-heading-color:red;
+// $about-heading-left-spacing:10px;
+// $about-heading-margin-top:10px;
+// h1{
+//     color: $about-heading-color;
+//     font-size: $about-heading-font;
+//     letter-spacing:$about-heading-left-spacing ;
+//     margin-top:$about-heading-margin-top ;
+// }
+// .title{
+//     h2{
+//         font:{
+//             size:20px;
+//             weight:normal;
+//         }
+//         &:hover{
+//             color: red;
+//             cursor: pointer;
+//         }
+//     }
+//     p{
+//         color: green;
+//         font:{
+//             size:20px;
+//         }
+//     }
+//     span{
+//         letter-spacing: 12px;
+//     }
+// }
+// @mixin header-style($font,$color,$weigth) {
+//     font-size: $font;
+//     color: $color;
+//     font-weight: $weigth;
+//     $translate :translate(100px,200px);
+//     transform: $translate;
+// }
+// .header{
+//     h1{
+//         @include header-style(12px,red,100);
+//     }
+// }
+// .footer{
+//     h1{
+//         @include header-style(15px,green,100);
+//     }
+// }
+
+// .header{
+//     font-size: 60px;
+//     font-weight: 300;
+//     color: red;
+//     h1{
+//         @extend .header;
+//         background-color: rgba(255, 255, 255,0.5);
+//         color: green;
+//     }
+// }
+
+// $heading-color:red;
+// .header{
+//     h1{
+//         color:$heading-color;
+//         @if $heading-color == red {
+//             background-color: green;
+//         }
+//         @else if $heading-color == blue{
+//             background-color: grey;
+//         }
+//         @else if $heading-color == yellow{
+//             background-color: red;
+//         }
+//         @else{
+//             background-color: white;
+//         }
+//     }
+// }
+
+// @for $thamso from 1 through 3{
+//     .header-#{$thamso}{
+//         font-size: 20px * $thamso;
+//     }
+// }
+// $thamso:1;
+// @while $thamso <4 {
+//     .header-#{$thamso}{
+//         font-size: 60px/$thamso;
+//     }
+//     $thamso:$thamso+1;
+// }
+@import './header.scss';
+@import './footer.scss';

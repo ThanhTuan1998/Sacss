@@ -1,0 +1,8 @@
+//chứa thư viện ngoài 
+.btn--white{
+    @include button($color-gray-4, $color-white-0,$color-black-light,$fw-bold-0,$pd-1 +1,$pd-2 -2,$color-gray-1);
+}
+//chứa thư viện ngoài 
+.btn--red{
+    @include button($color-white-0, $color-red-0,$color-red-0,$fw-bold-0,$pd-1 +1,$pd-2 -2,$color-red-1);
+}
